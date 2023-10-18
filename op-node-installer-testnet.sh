@@ -32,12 +32,12 @@ npm install -g pnpm
 # Install Foundry
 curl -L https://foundry.paradigm.xyz | bash
 . ~/.bashrc
-source /root/.bashrc
+source /root/.bashrc;
+source /root/.bashrc;
 foundryup
 
 
 # Build the OP node
-
 git clone https://github.com/ethereum-optimism/optimism.git
 cd optimism
 pnpm install
@@ -46,7 +46,6 @@ pnpm build
 
 
 # Build op-geth
-
 git clone https://github.com/ethereum-optimism/op-geth.git
 cd op-geth    
 make geth
